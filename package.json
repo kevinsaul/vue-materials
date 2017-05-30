@@ -1,8 +1,8 @@
 {
-  "name": "vue-materials",
+  "name": "vue-materials-wd",
   "description": "Materialize.css components for Vue JS",
-  "author": "John Leider <john.j.leider@gmail.com>",
-  "version": "1.0.7-rc.7",
+  "author": "WD",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/vue-materials.min.js",
   "license": "MIT",

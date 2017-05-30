@@ -10,7 +10,7 @@ export default {
                 el.setAttribute('href', `#${binding.arg || params.value}`)
             }
             
-            $(`#${binding.arg || params.value}`).modal()
+            $(`#${binding.arg || params.value}`).modal(params.value)
         })
     }
 }
