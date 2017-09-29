@@ -1,7 +1,7 @@
 <template>
     <select v-model="model" v-bind:multiple="multiple">
-        <option value=""
-                disabled
+        <option v-if="useFirstOption" value=""
+                :disabled="disabledFirstOption"
         >{{ selectText }}</option>
         <option v-for="item in items"
                 v-bind:value="item.id"
@@ -35,6 +35,14 @@
             textField: {
                 type: String,
                 default: 'text'
+            },
+            useFirstOption: {
+                type: Boolean,
+                default:true
+            },
+            disabledFirstOption: {
+                type: Boolean,
+                default:true,
             }
         },
 
