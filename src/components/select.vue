@@ -46,7 +46,9 @@
             },
             classStyle: {
                 type: Object,
-                default: {},
+                default: () => {
+                    return {}
+                },
             }
 
         },
