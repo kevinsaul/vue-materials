@@ -1,5 +1,5 @@
 <template>
-    <select v-model="model" v-bind:multiple="multiple">
+    <select v-model="model" v-bind:multiple="multiple" :class="classStyle">
         <option v-if="useFirstOption" value=""
                 :disabled="disabledFirstOption"
         >{{ selectText }}</option>
@@ -43,7 +43,12 @@
             disabledFirstOption: {
                 type: Boolean,
                 default:true,
+            },
+            classStyle: {
+                type: Object,
+                default: {},
             }
+
         },
 
         watch: {
